@@ -1,0 +1,540 @@
+* {
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Open Sans',sans-serif;
+    background: linear-gradient(rgb(197, 197, 197),rgb(111, 103, 108), rgb(130, 130, 130), rgba(255, 255, 255, 0.453), rgb(137, 78, 78));
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    box-shadow: 5px 5px 20px rgb(0, 0, 0);
+    height: 100vh;
+}
+
+.carousel {
+    width: 100%;
+    max-width: 100vw;
+    height: 50vh;
+    overflow: hidden;
+    position: relative;
+    scroll-behavior: smooth;
+    box-shadow: #000;
+    cursor: pointer;
+    box-shadow: 5px 5px 20px rgb(0, 0, 0);
+}
+.carousel-container {
+    display: flex;
+    width: 100%; /* 3 slide */
+    height: 100%;
+    animation: slide 20s infinite;
+}
+.carousel-slide {
+    width: 100%;
+    flex: 1;
+    flex: 0 0 100vw; /* Ukuran setiap slide = lebar layar */
+    height: 75vh; /* Opsional: Tinggi penuh */
+    scroll-snap-align: start;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    background: lightblue;
+    border: 2px solid #000;
+}
+.carousel-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+@keyframes slide {
+    0% { transform: translateX(0); }
+    33% { transform: translateX(-100%); }
+    66% { transform: translateX(-200%); }
+    100% { transform: translateX(0); }
+}
+
+.wrapper .img-1{
+    width: 370px;
+    margin-left: 50px;
+    position: relative;
+}
+
+.wrapper .img-2{
+    width: 850px;
+    margin-right: 50px;
+    position: relative;
+    height: 550px;
+}
+
+.wrapper p{
+    text-align: left;
+}
+
+.wrapper .deskripsi {
+    text-align: center;
+}
+
+.logo a {
+    font-size: 50px;
+    font-weight: 800;
+    float: left;
+    font-family: courier;
+    color: #2a3a4f;
+    display: flex;
+    margin-left: 20px;
+}
+
+.logo-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    image-rendering: auto;
+    cursor: pointer;
+    margin-left: 20px;
+    image-resolution: 100%;
+}
+
+.logo-1:hover{
+    background-color: rgba(55, 55, 55, 0.2);
+    border-radius: 20px;
+    transition: .4s ease-in-out;
+}
+
+.menu {
+    float: right;
+}
+
+
+nav {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    line-height: 80px;
+    position: sticky;
+    position: -webkit-sticky; 
+    top: 0;
+    background: #ffffff;
+    z-index: 1px;
+    border-bottom:1px solid #000000;
+    padding: 20px;
+    background: linear-gradient(white, rgb(125, 125, 125));
+    position: fixed;
+    left: 0;
+    width: 100%;
+    padding: 15px;
+    z-index: 1000; /* Agar selalu di atas elemen lain */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav ul li {
+    float: left;
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: black;
+    font-weight: bold;
+    text-align: right;
+    text-decoration: none;
+    margin-left: 90px;
+    font-size: 20px;
+    background-color: transparent;
+
+}
+
+nav ul li a:hover {
+    text-decoration: burlywood;
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 9px;
+    transition: 0.4s;
+}
+
+section {
+    margin: auto ;   
+    display: flex;
+    margin-bottom: 50px;
+}
+
+section .img-1{
+    width:22rem;
+    margin-top: 5rem;
+    margin-right: 2rem;
+    box-shadow: 5px 5px 20px rgb(0, 0, 0);
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 20px;  
+    transition: .4s ease-in-out;
+}
+
+section .img-1:hover{
+    filter: brightness(80%);
+    box-shadow: 8px 8px 20px black;
+    transform: scale(1.03);
+}
+
+section .img-2{
+    width:170rem;
+    margin-top: 5rem;
+    margin-right: 2rem;
+    box-shadow: 5px 5px 20px rgb(0, 0, 0);
+    overflow: hidden;
+    cursor: pointer; 
+    border-radius: 20px; 
+    transition: .4s ease-in-out; 
+}
+
+section .img-2:hover{
+    filter: brightness(80%);
+    box-shadow: 8px 8px 20px black;
+    transform: scale(1.03);
+}
+
+section .img-3{
+    width:18rem;
+    margin-top: 5rem;
+    margin-right: 2rem;
+    box-shadow: 5px 5px 20px rgb(0, 0, 0);
+    overflow: hidden;
+    cursor: pointer; 
+    border-radius: 20px; 
+    transition: .4s ease-in-out; 
+}
+
+section .img-3:hover{
+    filter: brightness(80%);
+    box-shadow: 8px 8px 20px black;
+    transform: scale(1.03);
+}
+
+.kolom {
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.kolom .deskripsi {
+    font-size: 33px;
+    font-weight: bold;
+    font-family: 'comic sans ms';
+    color: #000000;
+    font-style: oblique;
+}
+
+.wrapper h2{
+    text-align: center;
+}
+
+.wrapper p{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+h2 {
+    font-family: 'comic sans ms';
+    font-weight: 800;
+    font-size: 45px;
+    margin-bottom: 20px;
+    color: #333333;
+    width: 100%;
+    line-height: 50px;
+}
+
+a.tbl-pink {
+    background: #fc5185;
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 15px 20px 15px 20px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-weight: bold;
+    margin-left: 20px;
+    transition: .4s ease-in-out;
+}
+
+a.tbl-pink:hover{
+    filter: brightness(80%);
+    box-shadow: 8px 8px 20px black;
+    transform: scale(1.03);
+}
+
+#courses {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+    text-align: center;
+    width: 100%;
+}
+
+.kolom {
+    background: rgba(255, 255, 255, 0.8); /* Transparan */
+    padding: 0px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px rgb(0, 0, 0);
+    margin-right: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.deskripsi {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+p {
+    margin: 10px 0px 10px 0px;
+    padding: 10px 0px 10px 0px;
+}
+
+.tengah {
+    text-align: center;
+    width: 100%;
+    background-color: #3e4752;
+    box-shadow: 5px 5px 20px rgb(0, 0, 0);
+}
+
+.tutor-list {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #c2c2c2;
+    box-shadow: 5px 5px 20px rgb(0, 0, 0);
+    height: 90vh;
+}
+
+.kartu-tutor .leader{
+    width: 40%;
+    margin: 0 ;
+    border-radius: 20%;
+    outline: #000;
+    outline-style: auto;
+    filter: brightness(110%);
+    cursor: pointer;
+    box-shadow: 5px 5px 20px rgb(0, 0, 0);
+    margin-top: 80px;
+    transition: .4s ease-in-out;
+}
+
+.kartu-tutor .leader:hover{
+    filter: brightness(80%);
+    box-shadow: 8px 8px 20px black;
+    transform: scale(1.03);
+}
+
+.kartu-tutor .leader-2{
+    width: 72%;
+    margin: 0 ;
+    border-radius: 20%;
+    outline: #000;
+    outline-style: auto;
+    filter: brightness(110%);
+    cursor: pointer;
+    box-shadow: 5px 5px 20px rgb(0, 0, 0);
+    margin-top: 80px;
+    transition: .4s ease-in-out;
+}
+
+.kartu-tutor .leader-2:hover{
+    filter: brightness(80%);
+    box-shadow: 8px 8px 20px black;
+    transform: scale(1.03);
+}
+
+.zoomed {
+    transform: scale(3);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1.2);
+    transition: .5s;
+    z-index: 1000;
+}
+
+.kartu-tutor .p-1 {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 800;
+    font-size: 25px;
+    text-align: center;
+    color: #3d3d3d;
+    font-style: italic;
+}
+
+.kartu-tutor .p-2 {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 800;
+    font-size: 25px;
+    text-align: center;
+    color: #3d3d3d;
+    font-style: italic;
+}
+
+.partner-list {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 5px 5px 20px rgb(0, 0, 0);
+}
+
+.kartu-partner {
+    width: 20%;
+    margin: 0 auto;
+    box-shadow: 5px 5px 20px rgb(0, 0, 0);
+    border-radius: 20px;
+}
+
+.kartu-partner img {
+    width: 245px;
+    height: 150px;
+    border-radius: 10%;
+    outline: #000;
+    outline-style: auto;
+    cursor: pointer;
+    box-shadow: 5px 5px 20px rgb(0, 0, 0);
+    transition: .4s ease-in-out;
+}
+
+.kartu-partner img:hover{
+    filter: brightness(80%);
+    box-shadow: 8px 8px 20px black;
+    transform: scale(1.03);
+}
+
+.zoomed .kartu-partner img{
+    transform: scale(3);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1.2);
+    transition: .5s;
+    z-index: 1000;
+}
+
+#contact {
+    background: #bebebe;
+    padding:50px 0px 50px 0px;
+    text-align: center;
+    box-shadow: 5px 5px 20px rgb(0, 0, 0);
+}
+
+.footer {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    box-shadow: 5px 5px 20px rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+.footer-section {
+    width: 20%;
+    margin: 0 auto;
+    box-shadow: 5px 5px 20px rgb(0, 0, 0);
+}
+
+.footer p{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.bg1:hover{
+    background-color: rgba(55, 55, 55, 0.2);
+    border-radius: 20px;
+    transition: .4s ease-in-out;
+}
+
+.bg2:hover{
+    background-color: rgba(55, 55, 55, 0.2);
+    border-radius: 20px;
+    transition: .4s ease-in-out;
+}
+
+.foooter-section, img{
+    width: 50px;
+    box-shadow: 5px 5px 20px rgb(0, 0, 0);
+    transition: .4s ease-in-out;
+}
+
+h3 {
+    font-family: 'comic sans ms';
+    font-weight: 800;
+    font-size: 30px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    color: #364f6b;
+    width: 100%;
+    line-height: 50px;
+}
+
+#copyright {
+    text-align: center;
+    width: 100%;
+    padding: 50px 0px 50px 0px;
+    margin-top: 2px;
+    box-shadow: 5px 5px 20px rgb(0, 0, 0);
+}
+
+@media screen and (max-width: 991.98px) {
+    .wrapper {
+        width: 90%;
+    }
+
+    .logo a {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav .menu {
+        width: 100%;
+        margin: 0;
+    }
+
+    nav .menu ul {
+        text-align: center;
+        margin: auto;
+        line-height: 60px;
+    }
+
+    nav .menu ul li {
+        display: inline-block;
+        float: none;
+    }
+
+    section {
+        display: block;
+    }
+
+    section img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .kartu-tutor {
+        width: 50%;
+    }
+
+    .kartu-partner {
+        width: 50%;
+    }
+} 

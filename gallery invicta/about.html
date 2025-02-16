@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INVICTA Gallery</title>
+    <link rel="stylesheet" href="styleabout.css">
+</head>
+<body>
+    <header>
+        <h1>ABOUT INVICTA'S</h1>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="people.html">People</a></li>
+                <li><a href="#">KOSONG</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <section class="gallery">
+        <div class="gallery-item" style="background-image: url('logo\ angkatan.png');" onclick="zoomImage(this)">KOSONG</div>
+    </section>
+
+    <footer>
+        <p>&copy; <b>2022-2025</b> <b>INVICTA #1 GENERATION.</b> <b> All rights reserved.</b></p>
+    </footer>
+
+    <script>
+        function zoomImage(element) {
+            element.classList.toggle("zoomed");
+        }
+    </script>
+
+</body>
+</html>
